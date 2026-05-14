@@ -32,10 +32,23 @@
 
   html {
     @apply bg-fondo;
+    min-height: 100%;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   body {
-    @apply min-h-screen bg-fondo text-texto antialiased;
+    @apply bg-fondo text-texto antialiased;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
   }
 }
 
